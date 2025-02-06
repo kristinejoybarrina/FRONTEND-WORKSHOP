@@ -1,5 +1,5 @@
 body {
-    background-image: url('/Exercises/CSS-Exercises/CSS-Exercise-1/bg.png'); /* Replace with the path to your image */
+    background-image: url('/Exercises/CSS-Exercises/CSS-Exercise-1/img/bg.png'); /* Replace with the path to your image */
     background-size: cover; /* Cover the entire page */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -10,9 +10,41 @@ body {
     align-items: center; /* Center vertically */
     height: 100vh; /* Full viewport height */
 }
+.login-container {
+    background-image: url('/Exercises/CSS-Exercises/CSS-Exercise-1/img/loginBg.png'); /* Replace with the path to your image */
+    background-size: contain; /* Maintain the original size and aspect ratio */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%; /* Responsive width */
+    max-width: 500px; /* Maximum width */
+    min-height: 500px; /* Minimum height to ensure the container is large enough */
+    color: #40038E; /* Text color to contrast with the background image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    font-family: Poppins, sans-serif; /* Set a custom font */
+}
+
+.login-container h1 {
+    margin-top: 10px; /* Remove default margin */
+    margin-bottom: 5px; /* Remove default margin */
+}
+
+.login-container h6 {
+    font-size: 12px; /* Example font size */
+    color: #000000; /* Example color */
+    margin-top: 0%;
+    margin-bottom: 40px; /* Example margin */
+    text-align: center; /* Center the text */
+    font-weight: 300; /* Set the font weight to bold (700) */
+}
 
 #loginButton {
-    background-color: #4CAF50; /* Green background */
+    background-color: #7D1CE4; /* Green background */
     border: none; /* Remove borders */
     color: white; /* White text */
     padding: 15px 32px; /* Some padding */
@@ -20,11 +52,35 @@ body {
     text-decoration: none; /* Remove underline */
     display: inline-block; /* Make the button inline */
     font-size: 16px; /* Increase font size */
-    margin: 4px 2px; /* Add some margin */
+    margin-top: 20px; /* Add some margin */
     cursor: pointer; /* Add a pointer cursor on hover */
     border-radius: 8px; /* Rounded corners */
+    width: 300px;
+    font-family: Poppins, sans-serif; /* Set a custom font */
 }
 
 #loginButton:hover:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #4500a0; /* Darker green on hover */
+}
+
+.form-control {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%; /* Ensure form controls take full width */
+    max-width: 400px; /* Set a maximum width for the input container */
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600; /* Optional: Make the label text bold */
+}
+
+.form-control input {
+    width: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Poppins', Arial, sans-serif; /* Set the custom font for input fields */
 }
