@@ -30,3 +30,26 @@ setInterval(updateClock, 1000);
 setInterval(updateCountdown, 1000);  
 updateClock();  
 updateCountdown();  
+
+const santa = document.querySelector('.movable-santa');
+let isDragging = false;
+let offsetX, offsetY;
+
+santa.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    offsetX = e.clientX - santa.getBoundingClientRect().left;
+    offsetY = e.clientY - santa.getBoundingClientRect().top;
+    santa.style.cursor = 'grabbing';
+});
+
+document.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    santa.style.position = 'absolute';
+    santa.style.left = `${e.clientX - offsetX}px`;
+    santa.style.top = `${e.clientY - offsetY}px`;
+});
+
+document.addEventListener('mouseup', () => {
+    isDragging = false;
+    santa.style.cursor = 'grab';
+});

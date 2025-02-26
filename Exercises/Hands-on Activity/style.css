@@ -9,7 +9,7 @@ body {
     align-items: center;  
     height: 100vh;  
     margin: 0;  
-    background: linear-gradient(135deg, #8bf898, #f59f9f);   
+    background: linear-gradient(to bottom, #ff0000, #8f0101);   
     font-family: 'Digital', sans-serif; 
     color: #fff;  
     overflow: hidden;  
@@ -24,7 +24,7 @@ body {
     z-index: 10;  
     transition: transform 0.3s ease, background-color 0.3s ease;  
     width: 90%;  
-    max-width: 500px;  
+    max-width: 800px;  
 }  
 
 .clock-container:hover {  
@@ -58,8 +58,8 @@ body {
     margin: 0;  
     letter-spacing: 5px;  
     text-align: center;  
-    color: #387d2e;  
-    text-shadow: 0 0 10px rgba(75, 255, 75, 0.848), 0 0 20px rgba(0, 255, 0, 0.4);   
+    color: #ffbd59;  
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.848);
 }  
 
 .message {  
@@ -74,21 +74,21 @@ body {
     text-align: center;
     margin-top: 20px;
     font-size: 20px;
-    color: #333;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    color: #fea3a3;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 .countdown-container p {
-    font-size: 18px;
+    font-size: 45px;
     margin: 0;
     font-weight: bold;
 }
 
 .countdown-container h2 {
     margin: 5px 0;
-    font-size: 24px;
-    color: #ff4545;
-    text-shadow: 0 0 10px rgba(255, 69, 69, 0.8);
+    font-size: 100px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 175, 175, 0.8);
 }
 
 .snowflakes {  
@@ -110,19 +110,29 @@ body {
     animation: fall linear infinite;  
 }  
 
+
 @keyframes fall {  
     to {  
         transform: translateY(100vh);  
     }  
 }  
 
-.snowflake:nth-child(1) { left: 10%; animation-duration: 5s; animation-delay: 0s; }  
-.snowflake:nth-child(2) { left: 20%; animation-duration: 7s; animation-delay: 1s; }  
-.snowflake:nth-child(3) { left: 30%; animation-duration: 6s; animation-delay: 2s; }  
-.snowflake:nth-child(4) { left: 40%; animation-duration: 5.5s; animation-delay: 3s; }  
-.snowflake:nth-child(5) { left: 50%; animation-duration: 8s; animation-delay: 4s; }  
-.snowflake:nth-child(6) { left: 60%; animation-duration: 7s; animation-delay: 5s; }  
-.snowflake:nth-child(7) { left: 70%; animation-duration: 6.5s; animation-delay: 1s; }  
-.snowflake:nth-child(8) { left: 80%; animation-duration: 5.5s; animation-delay: 2s; }  
-.snowflake:nth-child(9) { left: 90%; animation-duration: 7.5s; animation-delay: 3s; }  
-.snowflake:nth-child(10) { left: 15%; animation-duration: 6s; animation-delay: 4s; }  
+#snowflake-1 { opacity: 50%;font-size:100px; left: 10%; animation-duration: 5s; animation-delay: 0s; }  
+#snowflake-2 { opacity: 50%;font-size:50px;left: 30%; animation-duration: 10s; animation-delay: 1s; }  
+#snowflake-3 { opacity: 50%;font-size:30px;left: 35%; animation-duration: 6s; animation-delay: 2s; }  
+#snowflake-4 { opacity: 50%;font-size:60px;left: 40%; animation-duration: 5.5s; animation-delay: 3s; }  
+#snowflake-5 { opacity: 50%;font-size:75px;left: 50%; animation-duration: 8s; animation-delay: 4s; }  
+#snowflake-6 { opacity: 50%;font-size:40px;left: 60%; animation-duration: 7s; animation-delay: 5s; }  
+#snowflake-7 { opacity: 50%;font-size:40px;left: 70%; animation-duration: 6.5s; animation-delay: 1s; }  
+#snowflake-8 { opacity: 50%;font-size:100px;left: 80%; animation-duration: 5.5s; animation-delay: 2s; }  
+#snowflake-9 { opacity: 50%;font-size:65px;left: 90%; animation-duration: 7.5s; animation-delay: 3s; }  
+#snowflake-10{ opacity: 50%;font-size:55px;left: 15%; animation-duration: 6s; animation-delay: 4s; }
+
+.movable-santa {
+    position: absolute; 
+    top: 50px;
+    left: 50px;
+    width: 400px;
+    height: 400px; 
+    cursor: move; 
+}
